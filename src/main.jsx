@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import App from './Login.jsx';
 import './cafe.css';
 import { initializeEngine } from './c-engine.js';
-import engineUrl from './native/cafe.wasm?url';
+import engineUrl from './native/cafe.wasm?url&no-inline';
 
 async function start() {
   const response = await fetch(engineUrl);
