@@ -1,0 +1,23 @@
+{
+  "name": "bean-rush-cafe-demo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "native:build": "node scripts/build-native.js --force",
+    "predev": "node scripts/build-native.js",
+    "prebuild": "node scripts/build-native.js",
+    "test": "node --import ./scripts/init-test-engine.js --test src/cafe-game.test.js src/local-account.test.js",
+    "pretest": "node scripts/build-native.js",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {}
+}
